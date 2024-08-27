@@ -1,0 +1,21 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    margin: 0;
+    font-family: "Outfit", sans-serif;
+    background-color: hsl(148, 38%, 91%);
+}
+
+.form {
+    background-color: hsl(0, 0%, 100%);
+}
