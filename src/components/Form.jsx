@@ -32,9 +32,9 @@ function Form() {
                                 </div>
                             </div>
                         </div>
-                        <div>
-                            <label htmlFor="message">Message</label>
-                            <textarea name="message" id="message"></textarea>
+                        <div className="message">
+                            <label htmlFor="message">Message *</label>
+                            <textarea cols="30" rows="7" name="message" id="message"></textarea>
                         </div>
                         <div>
                             <input type="checkbox" name="consent" id="consent" />
