@@ -24,14 +24,16 @@ body {
     width: 740px;
     height: 775px;
     border: none;
+    margin-bottom: 102px;
 }
 
 .form__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 15px;
     margin-top: 102px;
     margin-left: 42px;
-    margin-right: 25px;
+    margin-right: 40px;
 }
 
 legend {
@@ -55,23 +57,30 @@ input {
     margin-top: 10px;
     border-radius: 10px;
     border: solid 1px gray;
+    padding: 10px;
+    font-size: 17px;
 }
 
 input[type=text] {
-    width: 320px;
-    height: 51px;
+    width: 100%;
+    height: 3.3rem;
+}
+
+input[type=text]:hover, input[type=email]:hover, .choice__1:hover,
+.choice__2:hover, input[type=checkbox]:hover, textarea:hover {
+    cursor: pointer;
+    border: solid 1px hsl(169, 82%, 27%);
 }
 
 input[type=email] {
-    width: 657px;
-    height: 51px;
-    margin-top: 11px;
+    width: 100%;
+    height: 3.3rem;
 }
 
 .email {
     grid-column: 1 / 3;
     grid-row: 2 / 3;
-    margin-top: 21px;
+    margin-top: 5px;
 }
 
 .query__title {
@@ -79,7 +88,7 @@ input[type=email] {
 }
 
 .query {
-    margin-top: 26px;
+    margin-top: 10px;
     grid-column: 1 / 3;
     grid-row: 3 / 4;
 }
@@ -88,7 +97,6 @@ input[type=email] {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-top: 20px;
-    margin-right: 25px;
     grid-gap: 16px;
     font-size: 18px;
 }
@@ -97,8 +105,8 @@ input[type=email] {
 .choice__2 {
     border: solid 1px gray;
     border-radius: 10px;
-    width: 320px;
-    height: 51px;
+    width: 100%;
+    height: 3.2rem;
     text-align: left;
     align-content: center;
 }
@@ -106,12 +114,12 @@ input[type=email] {
 input[type=radio] {
     margin-left: 27px;
     margin-right: 19px;
-    transform: scale(1.5);
+    margin-bottom: 10px;
+    transform: scale(1.7);
 }
 
 .message {
-    margin-top: 20px;
-    margin-right: 16px;
+    margin-top: 5px;
     grid-column: 1 / 3;
 }
 
@@ -119,4 +127,42 @@ textarea {
     margin-top: 12px;
     border-radius: 10px;
     width: 100%;
+    resize: none;
+    padding: 10px;
+    font-size: 17px;
+}
+
+.consent {
+    margin-top: 20px;
+    grid-column: 1 / 3;
+}
+
+input[type=checkbox] {
+    transform: scale(1.5);
+    margin-left: 7px;
+    margin-right: 20px;
+    
+}
+
+.submit {
+    margin-top: 17px;
+    grid-column: 1 / 3;
+}
+
+input[type=submit] {
+    width: 100%;
+    height: 3.7rem;
+    background-color: hsl(169, 82%, 27%);
+    color: white;
+    font-size: 17px;
+    letter-spacing: 0.12em;
+}
+
+input[type=submit]:hover {
+    cursor: pointer;
+    background-color: black;
+}
+
+@media screen and (max-width: 375px) {
+ 
 }

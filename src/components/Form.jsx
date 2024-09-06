@@ -34,13 +34,13 @@ function Form() {
                         </div>
                         <div className="message">
                             <label htmlFor="message">Message *</label>
-                            <textarea cols="30" rows="7" name="message" id="message"></textarea>
+                            <textarea cols="30" rows="4" name="message" id="message"></textarea>
                         </div>
-                        <div>
+                        <div className="consent">
                             <input type="checkbox" name="consent" id="consent" />
-                            <label htmlFor="consent">I consent to being contacted by the team</label>
+                            <label htmlFor="consent">I consent to being contacted by the team *</label>
                         </div>
-                        <div>
+                        <div className="submit">
                             <input type="submit" value="Submit"></input>
                         </div>
                     </div>
