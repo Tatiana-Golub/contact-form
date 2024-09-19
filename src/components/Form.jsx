@@ -7,13 +7,15 @@ function Form() {
                 <fieldset className="form__frame">
                     <legend className="form__title">Contact Us</legend>
                     <div className="form__container">
-                        <div>
-                            <label htmlFor="fname">First Name *</label>
-                            <input type="text" id="fname" name="fname" />
-                        </div>
-                        <div>
-                            <label htmlFor="lname">Last Name *</label>
-                            <input type="text" id="lname" name="lname" />
+                        <div className="name__input">
+                            <div className="fname">
+                                <label htmlFor="fname">First Name *</label>
+                                <input type="text" id="fname" name="fname" />
+                            </div>
+                            <div className="lname">
+                                <label htmlFor="lname">Last Name *</label>
+                                <input type="text" id="lname" name="lname" />
+                            </div>
                         </div>
                         <div className="email">
                             <label htmlFor="email">Email Address *</label>

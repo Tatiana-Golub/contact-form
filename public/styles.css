@@ -32,7 +32,7 @@ body {
     grid-template-columns: 1fr 1fr;
     gap: 15px;
     margin-top: 102px;
-    margin-left: 42px;
+    margin-left: 40px;
     margin-right: 40px;
 }
 
@@ -66,8 +66,19 @@ input[type=text] {
     height: 3.3rem;
 }
 
-input[type=text]:hover, input[type=email]:hover, .choice__1:hover,
-.choice__2:hover, input[type=checkbox]:hover, textarea:hover {
+.name__input {
+    display: grid;
+    grid-template-columns: repeat(2, 100%);
+    gap: 15px;
+    
+}
+
+input[type=text]:hover,
+input[type=email]:hover,
+.choice__1:hover,
+.choice__2:hover,
+input[type=checkbox]:hover,
+textarea:hover {
     cursor: pointer;
     border: solid 1px hsl(169, 82%, 27%);
 }
@@ -141,7 +152,7 @@ input[type=checkbox] {
     transform: scale(1.5);
     margin-left: 7px;
     margin-right: 20px;
-    
+
 }
 
 .submit {
@@ -164,5 +175,143 @@ input[type=submit]:hover {
 }
 
 @media screen and (max-width: 375px) {
- 
+    .form__frame {
+        width: 100px;
+        margin-top: 30px;
+        margin-left: 5px;
+        margin-right: 25px;
+        height: 1075px;
+        margin-bottom: 72px;
+    }
+
+    .form__container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 87px;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+      legend {
+        margin-top: 25px;
+        margin-left: 25px;
+    }
+    
+    label {
+        float: left;
+        /* width: 100%; */
+        margin-top: 6px;
+    }
+    
+    input {
+        float: left;
+        margin-top: 10px;
+        border-radius: 10px;
+        border: solid 1px gray;
+        padding: 10px;
+        font-size: 17px;
+    }
+    
+    input[type=text] {
+        /* width: 100%; */
+        height: 3.3rem;
+    }
+    
+    .name__input {
+        grid-template-columns: repeat(1, max-content);
+    }
+
+    input[type=text]:hover,
+    input[type=email]:hover,
+    .choice__1:hover,
+    .choice__2:hover,
+    input[type=checkbox]:hover,
+    textarea:hover {
+        cursor: pointer;
+        border: solid 1px hsl(169, 82%, 27%);
+    }
+    
+    input[type=email] {
+        /* width: 100%; */
+        height: 3.3rem;
+    }
+    
+    .email {
+        margin-top: 5px;
+    }
+    
+    .query__title {
+        margin-bottom: 10px;
+    }
+    
+    .query {
+        margin-top: 10px;
+    }
+    
+    .radio__choice {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 20px;
+        grid-gap: 16px;
+        font-size: 18px;
+    }
+    
+    .choice__1,
+    .choice__2 {
+        border: solid 1px gray;
+        border-radius: 10px;
+        /* width: 100%; */
+        height: 3.2rem;
+        text-align: left;
+        align-content: center;
+    }
+    
+    input[type=radio] {
+        margin-left: 27px;
+        margin-right: 19px;
+        margin-bottom: 10px;
+        transform: scale(1.7);
+    }
+    
+    .message {
+        margin-top: 5px;
+    }
+    
+    textarea {
+        margin-top: 12px;
+        border-radius: 10px;
+        /* width: 100%; */
+        resize: none;
+        padding: 10px;
+        font-size: 17px;
+    }
+    
+    .consent {
+        margin-top: 20px;
+    }
+    
+    input[type=checkbox] {
+        transform: scale(1.5);
+        margin-left: 7px;
+        margin-right: 20px;
+    
+    }
+    
+    .submit {
+        margin-top: 17px;
+    }
+    
+    input[type=submit] {
+        /* width: 100%; */
+        height: 3.7rem;
+        background-color: hsl(169, 82%, 27%);
+        color: white;
+        font-size: 17px;
+        letter-spacing: 0.12em;
+    }
+    
+    input[type=submit]:hover {
+        cursor: pointer;
+        background-color: black;
+    }
 }
