@@ -20,11 +20,10 @@ body {
 .form__frame {
     border-radius: 20px;
     background-color: hsl(0, 0%, 100%);
-    margin: 127px auto auto auto;
+    margin: 127px auto 102px auto;
     width: 740px;
     height: 775px;
     border: none;
-    margin-bottom: 102px;
 }
 
 .form__container {
@@ -177,11 +176,8 @@ input[type=submit]:hover {
 @media screen and (max-width: 375px) {
     .form__frame {
         width: 100px;
-        margin-top: 30px;
-        margin-left: 5px;
-        margin-right: 25px;
         height: 1075px;
-        margin-bottom: 72px;
+        margin: 127px 15px auto 15px;
     }
 
     .form__container {
@@ -192,18 +188,17 @@ input[type=submit]:hover {
         margin-right: 25px;
     }
 
-      legend {
+    legend {
         margin-top: 25px;
         margin-left: 25px;
     }
     
     label {
         float: left;
-        /* width: 100%; */
         margin-top: 6px;
     }
     
-    input {
+        input {
         float: left;
         margin-top: 10px;
         border-radius: 10px;
@@ -213,26 +208,15 @@ input[type=submit]:hover {
     }
     
     input[type=text] {
-        /* width: 100%; */
+        width: 100%;
         height: 3.3rem;
     }
     
     .name__input {
         grid-template-columns: repeat(1, max-content);
     }
-
-    input[type=text]:hover,
-    input[type=email]:hover,
-    .choice__1:hover,
-    .choice__2:hover,
-    input[type=checkbox]:hover,
-    textarea:hover {
-        cursor: pointer;
-        border: solid 1px hsl(169, 82%, 27%);
-    }
     
     input[type=email] {
-        /* width: 100%; */
         height: 3.3rem;
     }
     
@@ -260,7 +244,6 @@ input[type=submit]:hover {
     .choice__2 {
         border: solid 1px gray;
         border-radius: 10px;
-        /* width: 100%; */
         height: 3.2rem;
         text-align: left;
         align-content: center;
@@ -280,7 +263,6 @@ input[type=submit]:hover {
     textarea {
         margin-top: 12px;
         border-radius: 10px;
-        /* width: 100%; */
         resize: none;
         padding: 10px;
         font-size: 17px;
@@ -302,7 +284,6 @@ input[type=submit]:hover {
     }
     
     input[type=submit] {
-        /* width: 100%; */
         height: 3.7rem;
         background-color: hsl(169, 82%, 27%);
         color: white;
