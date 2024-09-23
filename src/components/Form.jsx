@@ -7,7 +7,8 @@ function Form() {
                 <fieldset className="form__frame">
                     <legend className="form__title">Contact Us</legend>
                     <div className="form__container">
-                        <div className="name__input">
+                        <div className="text">
+                         <div className="name__input">
                             <div className="fname">
                                 <label htmlFor="fname">First Name *</label>
                                 <input type="text" id="fname" name="fname" />
@@ -16,6 +17,7 @@ function Form() {
                                 <label htmlFor="lname">Last Name *</label>
                                 <input type="text" id="lname" name="lname" />
                             </div>
+                         </div>
                         </div>
                         <div className="email">
                             <label htmlFor="email">Email Address *</label>
