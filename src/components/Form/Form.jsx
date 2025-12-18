@@ -5,7 +5,7 @@ import RadioGroup from "../RadioGroup";
 import Textarea from "../Textarea";
 import Checkbox from "../Checkbox";
 import SuccessMessage from "../SuccessMessage";
-import './Form.css';
+import "./Form.css";
 
 const initialState = {
   fname: "",
@@ -111,7 +111,13 @@ export default function Form() {
             <button type="submit">Submit</button>
           </div>
 
-          {isSubmitted && <SuccessMessage />}
+          {isSubmitted && (
+            <SuccessMessage
+              title="Message Sent!"
+              message="Thanks for completing the form. We’ll be in touch soon!"
+              onClose={() => setIsSubmitted(false)}
+            />
+          )}
         </div>
       </fieldset>
     </form>
