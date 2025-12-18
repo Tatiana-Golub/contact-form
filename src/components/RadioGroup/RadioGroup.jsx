@@ -1,3 +1,5 @@
+import ErrorMessage from "../ErrorMessage";
+
 export default function RadioGroup({ value, onChange, error }) {
   return (
     <div className="field-group full-width">
@@ -27,7 +29,7 @@ export default function RadioGroup({ value, onChange, error }) {
         </label>
       </div>
 
-      {error && <p className="error">{error}</p>}
+      <ErrorMessage message={error} />
     </div>
   );
 }

@@ -1,3 +1,5 @@
+import ErrorMessage from "../ErrorMessage";
+
 export default function TextInput({
   label,
   id,
@@ -24,7 +26,7 @@ export default function TextInput({
         aria-invalid={!!error}
       />
 
-      {error && <p className="error">{error}</p>}
+      <ErrorMessage message={error} />
     </div>
   );
 }

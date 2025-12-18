@@ -1,3 +1,5 @@
+import ErrorMessage from "../ErrorMessage";
+
 export default function Textarea({
   label,
   id,
@@ -21,7 +23,7 @@ export default function Textarea({
         aria-invalid={!!error}
       />
 
-      {error && <p className="error">{error}</p>}
+      <ErrorMessage message={error} />
     </div>
   );
 }
