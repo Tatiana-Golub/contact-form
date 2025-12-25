@@ -5,7 +5,7 @@ export default function RadioGroup({ value, onChange, error }) {
     <div className="field-group full-width">
       <label className="radio-label">Query Type *</label>
 
-      <div className="radio-group" aria-invalid={!!error}>
+      <div className="radio-group" role="radiogroup" aria-invalid={!!error}>
         <label className={`radio-box ${value === "general" ? "active" : ""}`}>
           <input
             type="radio"
