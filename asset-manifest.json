@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/contact-form/static/css/main.0b469ff0.css",
+    "main.js": "/contact-form/static/js/main.95ac3828.js",
+    "index.html": "/contact-form/index.html",
+    "static/media/icon-success-check.svg": "/contact-form/static/media/icon-success-check.b4e857b980bb531b1fe0b5030a0e14c0.svg",
+    "main.0b469ff0.css.map": "/contact-form/static/css/main.0b469ff0.css.map",
+    "main.95ac3828.js.map": "/contact-form/static/js/main.95ac3828.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0b469ff0.css",
+    "static/js/main.95ac3828.js"
+  ]
+}
