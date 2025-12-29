@@ -49,9 +49,7 @@ export default function Form() {
   return (
     <form className="form" onSubmit={handleSubmit} noValidate>
       <fieldset className="form__frame">
-        <legend>
-          <span>Contact Us</span>
-        </legend>
+        <h1 className="form-title">Contact Us</h1>
 
         <div className="form__grid">
           <TextInput

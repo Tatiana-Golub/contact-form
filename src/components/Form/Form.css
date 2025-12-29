@@ -21,38 +21,31 @@ body {
     padding: 1.5rem;
 }
 
+.form {
+    margin-top: 6.5rem;
+}
+
+.form-title {
+    font-size: 1.9rem;
+    font-weight: 700;
+    padding-top: 1rem;
+}
+
 .form__frame {
     background-color: var(--white);
     border: none;
     border-radius: 1rem;
     max-width: 740px;
-    margin: 6.5rem auto;
-    padding: 2.6rem;
+    margin: 0 auto;
+    padding: 0 2.5rem 2.5rem;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-}
-
-legend {
-    border: none;
-    padding: 0;
-    margin: 0;
-    position: relative;
-    width: 100%;
-}
-
-legend span {
-    display: block;
-    font-size: 1.9rem;
-    font-weight: 700;
-    position: absolute;
-    top: 2.3rem;
-    left: 0;
 }
 
 .form__grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1.7rem 1rem;
-    margin-top: 4rem;
+    margin-top: 1.8rem;
 }
 
 .full-width {
